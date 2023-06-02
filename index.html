@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>C++ Technical Documentation</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="menu">
+      <h1>Documentation Menu</h1>
+      <ul>
+        <li><a href="#history">History</a></li>
+        <li><a href="#language">Language</a></li>
+        <li><a href="#library">Library</a></li>
+        <li><a href="#Guidelines">Guidelines</a></li>
+        <li><a href="#basics">Basics</a></li>
+        <li><a href="#structure">Structure</a></li>
+        <li><a href="#dataTypes">Compound Data Types</a></li>
+        <li><a href="#classes">Classes</a></li>
+       
+      </ul>
+    </div>
+    <div class="content">
+      <section id="history">
+        <h2>History</h2>
+        <p>In 1979, Bjarne Stroustrup, a Danish computer scientist, began work on "C with Classes", the predecessor to C++. The motivation for creating a new language originated from Stroustrup's experience in programming for his PhD thesis. Stroustrup found that Simula had features that were very helpful for large software development, but the language was too slow for practical use, while BCPL was fast but too low-level to be suitable for large software development. When Stroustrup started working in AT&T Bell Labs, he had the problem of analyzing the UNIX kernel with respect to distributed computing. Remembering his PhD experience, Stroustrup set out to enhance the C language with Simula-like features.[21] C was chosen because it was general-purpose, fast, portable and widely used. As well as C and Simula's influences, other languages also influenced this new language, including ALGOL 68, Ada, CLU and ML.</p>
+      </section>
+      <section id="language">
+        <h2>Language</h2>
+        <p>The C++ language has two main components: a direct mapping of hardware features provided primarily by the C subset, and zero-overhead abstractions based on those mappings. Stroustrup describes C++ as "a light-weight abstraction programming language [designed] for building and using efficient and elegant abstractions";[14] and "offering both hardware access and abstraction is the basis of C++. Doing it efficiently is what distinguishes it from other languages."</p>
+      <section id="library">
+        <h2>Library</h2>
+        <p>The C++ standard consists of two parts: the core language and the standard library. C++ programmers expect the latter on every major implementation of C++[clarify]; it includes aggregate types (vectors, lists, maps, sets, queues, stacks, arrays, tuples), algorithms (find, for_each, binary_search, random_shuffle, etc.), input/output facilities (iostream, for reading from and writing to the console and files), filesystem library, localisation support, smart pointers for automatic memory management, regular expression support, multi-threading library, atomics support (allowing a variable to be read or written to by at most one thread at a time without any external synchronisation), time utilities (measurement, getting current time, etc.), a system for converting error reporting that does not use C++ exceptions into C++ exceptions, a random number generator and a slightly modified version of the C standard library (to make it comply with the C++ type system).</p>
+      <section id="Guidelines">
+        <h2>Guidelines</h2>
+        <p>The C++ Core Guidelines are an initiative led by Bjarne Stroustrup, the inventor of C++, and Herb Sutter, the convener and chair of the C++ ISO Working Group, to help programmers write 'Modern C++' by using best practices for the language standards C++11 and newer, and to help developers of compilers and static checking tools to create rules for catching bad programming practices.
+
+            The main aim is to efficiently and consistently write type and resource safe C++.
+            
+            The Core Guidelines were announced in the opening keynote at CPPCon 2015.
+            
+            The Guidelines are accompanied by the Guideline Support Library (GSL), a header only library of types and functions to implement the Core Guidelines and static checker tools for enforcing Guideline rules.</p>
+      <section id="basics">
+        <h2>Basics</h2>
+        <p>The best way to learn a programming language is by writing programs. Typically, the first program beginners write is a program called "Hello World", which simply prints "Hello World" to your computer screen. Although it is very simple, it contains all the fundamental components C++ programs have.</p>
+      <section id="structure">
+        <h2>Structure</h2>
+        <p>A simple C++ statement is each of the individual instructions of a program, like the variable declarations and expressions seen in previous sections. They always end with a semicolon (;), and are executed in the same order in which they appear in a program.
+
+            But programs are not limited to a linear sequence of statements. During its process, a program may repeat segments of code, or take decisions and bifurcate. For that purpose, C++ provides flow control statements that serve to specify what has to be done by our program, when, and under which circumstances.
+            
+            Many of the flow control statements explained in this section require a generic (sub)statement as part of its syntax. This statement may either be a simple C++ statement, -such as a single instruction, terminated with a semicolon (;) - or a compound statement. A compound statement is a group of statements (each of them terminated by its own semicolon), but all grouped together in a block, enclosed in curly braces: {}:
+            
+            { statement1; statement2; statement3; }
+            
+            The entire block is considered a single statement (composed itself of multiple substatements). Whenever a generic statement is part of the syntax of a flow control statement, this can either be a simple statement or a compound statement.</p>
+      <section id="dataTypes">
+        <h2>Compound Data types</h2>
+        <p>An array is a series of elements of the same type placed in contiguous memory locations that can be individually referenced by adding an index to a unique identifier.
+
+            That means that, for example, five values of type int can be declared as an array without having to declare 5 different variables (each with its own identifier). Instead, using an array, the five int values are stored in contiguous memory locations, and all five can be accessed using the same identifier, with the proper index.</p>
+      <section id="classes">
+        <h2>Classes</h2>
+        <p>Class in C++ is the building block that leads to Object-Oriented programming. It is a user-defined data type, which holds its own data members and member functions, which can be accessed and used by creating an instance of that class. A C++ class is like a blueprint for an object. For Example: Consider the Class of Cars. There may be many cars with different names and brands but all of them will share some common properties like all of them will have 4 wheels, Speed Limit, Mileage range, etc. So here, Car is the class, and wheels, speed limits, and mileage are their properties.</p>
+      </section>
+      <!-- Add more sections for other topics -->
+    </div>
+  </div>
+</body>
+</html>
